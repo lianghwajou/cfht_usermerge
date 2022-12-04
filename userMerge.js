@@ -32,9 +32,11 @@ class UserMerge {
 		const readlineSync = require('readline-sync');
 		for await (const pair of this.findPairs()) {
 			debug(`interactiveMerge`, {target: pair.target.extinfo}, {src: pair.src.extinfo});
-			let answer = readlineSync.question('Merge these two users?');
+			console.log({target: pair.target.extinfo}, {src: pair.src.extinfo});
+			let answer = readlineSync.question(`Merge these two users? `);
 			if (answer == "y") {
 				await Zendesk.mergeUsers (pair.target, pair.src, Config.domain, Config.token);
+				console.log('Merged.');
 			} else {
 				console.log(`Skip merge!`);
 			}

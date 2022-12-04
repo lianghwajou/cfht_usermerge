@@ -1,0 +1,21 @@
+{
+    "keepSettings": {
+        "type": 2,
+        "amount": 10
+    },
+    "auditFilename": "audit.json",
+    "hashType": "md5",
+    "extension": "",
+    "files": [
+        {
+            "date": 1670120875659,
+            "name": "/home/vagrant/cfht_usermerge/log/debug-20221203.log",
+            "hash": "c7ab2b66058ecca50c97e6ce4523e500"
+        },
+        {
+            "date": 1670121034633,
+            "name": "/home/vagrant/cfht_usermerge/logs/debug-20221203.log",
+            "hash": "e19eeaa6ce0e4322c23220bdec034e73"
+        }
+    ]
+}

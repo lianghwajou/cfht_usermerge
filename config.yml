@@ -1,11 +1,13 @@
 ---
 # config.yml
 zendesk:
-  domain: ukraineesc1661880008.zendesk.com
+  domain: ukraineesc.zendesk.com 
   tags: "cfht_bot" 
   pageSize: 50
-  createdAt: "2022-01-01"
-  targetPrefix: "10908488781723"
-  srcPrefix: "8788277706395"
+  createdAt: "2022-11-01"
+  targetPrefix: "10175158637979"
+  srcPrefix: "4517748899355"
+#  targetPrefix: "10908488781723"
+#  srcPrefix: "8788277706395"
 redis:
   url: "redis://127.0.0.1:6379"
