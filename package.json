@@ -1,0 +1,30 @@
+{
+  "name": "cfht_usermerge",
+  "version": "1.0.0",
+  "description": "Merge users from old assuresoft telegram bot to CFHT telegram bot in Zendesk",
+  "main": "app.js",
+  "scripts": {
+    "dev": "NODE_ENV=dev DEBUG=app* node app",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lianghwajou/cfht_usermerge.git"
+  },
+  "author": "Lianghwa Jou",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/lianghwajou/cfht_usermerge/issues"
+  },
+  "homepage": "https://github.com/lianghwajou/cfht_usermerge#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "js-yaml": "^4.1.0",
+    "node-fetch": "^2.6.7",
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "jest": "^29.3.1",
+    "nock": "^13.2.9"
+  }
+}
