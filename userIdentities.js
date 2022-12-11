@@ -8,12 +8,14 @@ class UserIdentities {
 	#splitId (extId) { 
 		let ids = extId.split(":");
 		this._prefix = ids[0];
-		if (ids[2]=="") {
-			this._telegramId = ids[1];
-			this._botId = "";
-		} else {
+		if (this.subtype == "CFHTTelegram") {
 			this._botId = ids[1];
 			this._telegramId = ids[2];
+		} 
+		if (this.subtype == "Telegram Channel") {
+			this._telegramId = ids[1];
+			this._botId = "";
+			this._username = ids[2];
 		}
 	}
 

@@ -3,8 +3,9 @@
 zendesk:
   domain: ukraineesc.zendesk.com 
   tags: "cfht_bot" 
-  pageSize: 50
-  createdAt: "2022-11-01"
+  pageSize: 100
+  maxResults: 1000
+  createdAt: "2022-12-10T00:13:45Z"
   targetPrefix: "10175158637979"
   srcPrefix: "4517748899355"
 #  targetPrefix: "10908488781723"

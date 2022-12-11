@@ -1,14 +1,31 @@
 const path = require("path");
 createDebugLog();
+const createDebug = require("debug");
+const debug = createDebug("app");
+const {execSync} = require('child_process');
 const UserMerge = require("./userMerge");
+const Config = require("./config");
+
+const sleepTime = 2 * 60 * 60; // 2 hours
 
 (async () => {
-	try {
-		await UserMerge.interactiveMerge();	
-		console.log("Completed!");
-	} catch (e) {
-		console.error(e);
-	}
+    let createdAt = Config.createdAt;
+    let counter = 0;
+    while (true) {
+        debug(`User Merge Run ${counter} with createdAt set to ${createdAt} starts at ${new Date(Date.now()).toISOString()} `);
+        console.log(`User Merge Run ${counter} with createdAt set to ${createdAt} starts at ${new Date(Date.now()).toISOString()} `);
+        try {
+            debug(`query users createdAt ${createdAt}`);
+            await UserMerge.batchMerge(createdAt);   
+        } catch (e) {
+            console.error(e);
+        }
+        debug(`User Merge Run ${counter} completed at ${new Date(Date.now()).toISOString()}`);
+        console.log(`User Merge Run ${counter} completed at ${ new Date(Date.now()).toISOString()}`);
+        execSync(`sleep ${sleepTime}`);
+        createdAt = Config.lastCreatedAt;
+        counter ++;
+    }
 }) ();
 
 function createDebugLog () {

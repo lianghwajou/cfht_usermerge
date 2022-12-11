@@ -16,6 +16,41 @@
             "date": 1670121034633,
             "name": "/home/vagrant/cfht_usermerge/logs/debug-20221203.log",
             "hash": "e19eeaa6ce0e4322c23220bdec034e73"
+        },
+        {
+            "date": 1670190932150,
+            "name": "/home/vagrant/cfht_usermerge/logs/debug-20221204.log",
+            "hash": "eeeb3a7fbb906b62aa971b17d36dad9b"
+        },
+        {
+            "date": 1670262868989,
+            "name": "/home/vagrant/cfht_usermerge/logs/debug-20221205.log",
+            "hash": "33b35695e2680a429d39a08efa07d44a"
+        },
+        {
+            "date": 1670353177855,
+            "name": "/home/vagrant/cfht_usermerge/logs/debug-20221206.log",
+            "hash": "3599af40b95649b42b41c53d464a9a34"
+        },
+        {
+            "date": 1670437276478,
+            "name": "/home/vagrant/cfht_usermerge/logs/debug-20221207.log",
+            "hash": "3c1ef927a5f63e720797a2f70ebdfeb5"
+        },
+        {
+            "date": 1670505457482,
+            "name": "/home/vagrant/cfht_usermerge/logs/debug-20221208.log",
+            "hash": "005ab5797c3c59e084efecc19f70b96e"
+        },
+        {
+            "date": 1670572800089,
+            "name": "/home/vagrant/cfht_usermerge/logs/debug-20221209.log",
+            "hash": "80c870a5850598a524cada72364f1eb6"
+        },
+        {
+            "date": 1670664158624,
+            "name": "/home/vagrant/cfht_usermerge/logs/debug-20221210.log",
+            "hash": "effcc75ddae2dc814f02ea99d17ad29c"
         }
     ]
 }

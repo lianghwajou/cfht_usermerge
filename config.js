@@ -27,12 +27,29 @@ class Config {
 		return this._config.zendesk.domain;
 	}
 
+	static get maxResults () {
+		return this._config.zendesk.maxResults;
+	}
+
 	static get pageSize () {
 		return this._config.zendesk.pageSize;
 	}
 
 	static get createdAt () {
 		return this._config.zendesk.createdAt;
+	}
+
+	static get lastCreatedAt () {
+		if (this._lastCreatedAt) {
+			return this._lastCreatedAt;
+		} else {
+			debug("lastCreatedAt is not set.");
+			throw new Error("Config: lastCreatedAt is not set.");
+		}
+	}
+
+	static set lastCreatedAt (createdAt) {
+		this._lastCreatedAt = createdAt;
 	}
 
 	static get token () {

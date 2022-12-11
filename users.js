@@ -44,7 +44,7 @@ class Users {
 	isTarget (prefix) {
 		return (this.userIdentities.length == 1 &&
 			this.userIdentities[0].isAnyChannel() && 
-			this.userIdentities[0].subtype.includes("CFHTTelegram") && 
+			this.userIdentities[0].subtype.includes("CFHTTelegram") &&
 			this.userIdentities[0].prefix == prefix &&
 			this.userIdentities[0].botId);
 	}
