@@ -51,6 +51,11 @@
             "date": 1670664158624,
             "name": "/home/vagrant/cfht_usermerge/logs/debug-20221210.log",
             "hash": "effcc75ddae2dc814f02ea99d17ad29c"
+        },
+        {
+            "date": 1670736119109,
+            "name": "/home/ubuntu/cfht_usermerge/logs/debug-20221210.log",
+            "hash": "42b930a4d7d8c51c6365c77c2a2c2192"
         }
     ]
 }
