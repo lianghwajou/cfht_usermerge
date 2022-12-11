@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "node app",
-    "dev": "NODE_ENV=dev DEBUG_COLORS=false DEBUG=app* node app",
+    "stop": "pm2 stop cfht-usermerge",
+    "debug": "NODE_ENV=dev DEBUG_COLORS=false DEBUG=app* pm2 start node app --name cfht-usermerge",
     "test": "jest"
   },
   "repository": {
